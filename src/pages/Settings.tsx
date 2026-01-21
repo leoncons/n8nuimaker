@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Server, Key, CheckCircle, XCircle, Loader2 } from 'lucide-react';
 import { useStore } from '../store/useStore';
-import type { N8nConnection } from '../types';
 
 interface SettingsForm {
   baseUrl: string;

@@ -9,8 +9,6 @@ import {
   BarChart3,
   Clock,
   Share2,
-  Download,
-  QrCode,
 } from 'lucide-react';
 import { useStore } from '../store/useStore';
 import type { GeneratedUI } from '../types';
@@ -31,15 +29,6 @@ export const Dashboard: React.FC = () => {
     if (confirm('Are you sure you want to delete this UI? This action cannot be undone.')) {
       deleteGeneratedUI(id);
     }
-  };
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric',
-    });
   };
 
   if (!connection) {
